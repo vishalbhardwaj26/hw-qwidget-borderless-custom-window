@@ -14,6 +14,10 @@
  * Customize by overriding native “resize” , “mouse” and “paint” events.
  * Hover or focused border style on custom window/title bar.
  
+ GUI: 
+ 
+ <img src = "/QtInv/images/window.png" width="300" />
+ 
  **More Study**
  * Window frame is an OS specific thing  and is not drawn by Qt. Approach is disabling window frame entirely by setting Qt::FramelessWindowHint flag on your widget, and drawing the frame and buttons yourself. This gives you control of the look of the frame, but is also a lot of work, because you need to handle all the windowing behavior like resizing, moving, maximizing or Aero Shake yourself.
  * Frameless QMainWindow is resizable its own, but custom window or dialog need to have QSizeGrip to make it resizable.
